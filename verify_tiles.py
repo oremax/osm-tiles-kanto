@@ -35,7 +35,7 @@ ns = {
 }
 for node in tree.body:
     if isinstance(node, ast.FunctionDef) and node.name in WANT:
-        code = ast.compile(ast.Module(body=[node], type_ignores=[]), SRC, "exec")
+        code = compile(ast.Module(body=[node], type_ignores=[]), SRC, "exec")
         exec(code, ns)
 
 query = ns["query_roads_in_bbox"]
