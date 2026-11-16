@@ -4,3 +4,4 @@ venv/
 *.log
 *.done
 __pycache__/
+*-journal
