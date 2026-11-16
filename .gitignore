@@ -1,0 +1,6 @@
+src/
+staging.sqlite
+venv/
+*.log
+*.done
+__pycache__/
